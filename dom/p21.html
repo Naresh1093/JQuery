@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY DOM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            cursor: pointer;
+            /* margin: 20px; */
+            padding: 20px;
+            display: inline-flex;
+            border: 15px solid orangered;
+            /* outline: 15px solid deepskyblue; */
+        }
+    </style>
+</head>
+<body>
+    <h3>innerWidth() and innerHeight() and outerWidth() and outerHeight()</h3>
+    <h1 id="out"></h1>
+    <h1 id="out1"></h1>
+
+    <div class="p1"></div>
+
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('div').click(function () {
+                $w = $(this).innerWidth();
+                $h = $(this).innerHeight();
+                $('#out').text(`inner width = ${$w}px and inner height = ${$h}px`);
+
+                $w1 = $(this).outerWidth();
+                $h1 = $(this).outerHeight();
+                $('#out1').text(`outer width = ${$w1}px and outer height = ${$h1}px`);
+            });
+        });
+    </script>
+</body>
+</html>

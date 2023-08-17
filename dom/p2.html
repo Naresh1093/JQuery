@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY DOM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h3>HTML Element as target</h3>
+    <div></div>
+    <section id="blk"></section>
+    <article class="sub"></article>
+    <div></div>
+
+    <script>
+        $(document).ready(function() {
+            //statements
+            $('div').html("<h1> Welcome to Jquery </h1>");
+            $('#blk').html("<h1> Targeting id </h1>");
+            $('.sub').html("<h1> Targeting class </h1>");
+        });
+    </script>
+</body>
+</html>

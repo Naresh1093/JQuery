@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY DOM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h3>attr()</h3>
+
+    <img src="https://picsum.photos/id/123/400/400" alt="nature" width="200" height="200">
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('img').click(function() {
+                $(this).attr("src", "https://picsum.photos/id/127/1200/800");
+                $(this).attr("width", "500");
+                $(this).attr("height", "500");
+            });
+        });
+    </script>
+</body>
+</html>

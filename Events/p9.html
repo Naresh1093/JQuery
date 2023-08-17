@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY EVENTS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h3>Change()</h3>
+
+    <h3 id="out"></h3>
+
+    <form action="">
+        <label for="">Choose Tech</label>
+        <select name="tech" id="tech">
+            <option value="null">Choose Tech</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Javascript">Javascript</option>
+            <option value="React">React</option>
+            <option value="Angular">Angular</option>
+        </select>
+    </form>
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('#tech').change(function() {
+                $x = $(this).val();
+                $('#out').text(`${ $x } selected value`);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY DOM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        #blk {
+            width: 300px;
+            height: 300px;
+            overflow: auto;
+            background-color: slateblue;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>ScrollTop()</h3>
+
+    <h1 id="output"></h1>
+
+    <div id="blk">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolor, atque nihil ipsa ullam nobis aspernatur eveniet officia eius sed autem exercitationem esse ducimus, magnam inventore sequi alias repellat laboriosam enim suscipit qui? Obcaecati recusandae iure mollitia, praesentium dicta minima ad distinctio minus rem hic quis error quaerat, ducimus sunt debitis consequuntur excepturi ipsa neque iusto adipisci impedit nemo? Aut, nihil. Nemo, esse. Itaque, mollitia harum vel ut reprehenderit in hic veritatis! Nulla praesentium unde provident nemo cumque dolorem ducimus molestiae doloremque aliquid eos quis obcaecati quia fugiat odit beatae tempore repellat corporis perferendis, eius ipsam asperiores a. Consectetur libero quasi labore aperiam, rem magni odit ab delectus esse harum voluptates distinctio ex voluptatem quia ipsa ullam? Et iure dignissimos placeat tenetur aspernatur voluptas animi repellat id, nobis eaque totam mollitia nam excepturi, sit, enim illo fugiat provident tempora? Enim illum similique expedita ratione perferendis aut eaque recusandae. Cum, sequi enim eaque quis beatae eos consequatur reiciendis voluptates non mollitia odit, perspiciatis ad magni placeat corporis pariatur exercitationem commodi maxime praesentium esse tenetur rem molestiae illo! Omnis ex at harum ipsum facere perferendis corporis corrupti, quisquam doloremque totam veritatis laboriosam obcaecati animi? Eum enim recusandae nihil fuga commodi sint inventore!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolor, atque nihil ipsa ullam nobis aspernatur eveniet officia eius sed autem exercitationem esse ducimus, magnam inventore sequi alias repellat laboriosam enim suscipit qui? Obcaecati recusandae iure mollitia, praesentium dicta minima ad distinctio minus rem hic quis error quaerat, ducimus sunt debitis consequuntur excepturi ipsa neque iusto adipisci impedit nemo? Aut, nihil. Nemo, esse. Itaque, mollitia harum vel ut reprehenderit in hic veritatis! Nulla praesentium unde provident nemo cumque dolorem ducimus molestiae doloremque aliquid eos quis obcaecati quia fugiat odit beatae tempore repellat corporis perferendis, eius ipsam asperiores a. Consectetur libero quasi labore aperiam, rem magni odit ab delectus esse harum voluptates distinctio ex voluptatem quia ipsa ullam? Et iure dignissimos placeat tenetur aspernatur voluptas animi repellat id, nobis eaque totam mollitia nam excepturi, sit, enim illo fugiat provident tempora? Enim illum similique expedita ratione perferendis aut eaque recusandae. Cum, sequi enim eaque quis beatae eos consequatur reiciendis voluptates non mollitia odit, perspiciatis ad magni placeat corporis pariatur exercitationem commodi maxime praesentium esse tenetur rem molestiae illo! Omnis ex at harum ipsum facere perferendis corporis corrupti, quisquam doloremque totam veritatis laboriosam obcaecati animi? Eum enim recusandae nihil fuga commodi sint inventore!</p>
+    </div>
+        
+    
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('#blk').scroll(function() {
+                $x = $(this).scrollTop();   // Read the scrolling position
+                $('#output').text(`${ Math.floor($x) }px`);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY DOM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h3>val()</h3>
+
+    <form action="">
+        <label for="name">Enter Your Name</label>
+        <input type="text" name="name" id="myName" placeholder="Enter Your Input">
+        <br><br>
+
+        <button>Get My Name</button>
+    </form>
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('button').click(function () {
+                // let name = $('#myName').val();  // javascript variable
+                $name = $('#myName').val();  // Jquery variable
+                alert("My Name is " + $name);
+            })
+        });
+    </script>
+</body>
+</html>

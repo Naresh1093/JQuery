@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY EFFECTS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        #slide, #txt {
+            width: 100%;
+            padding: 20px;
+            background-color: crimson;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #txt { display: none; }
+        #slide { text-align: center; }
+    </style>
+</head>
+<body>
+    <h3>slideDown()</h3>
+
+    <div id="slide">Click on me to slide down</div>
+    <div id="txt">
+        <h3>Sample Heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda provident explicabo odio cumque minima voluptas blanditiis voluptatum, neque numquam itaque? Iure inventore commodi, quos maiores in illo dolorem esse! Necessitatibus perferendis voluptate, dolore vel ipsum quos rerum animi labore tempore maiores odio recusandae magnam adipisci ipsam harum nobis tempora optio?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti reprehenderit molestias praesentium eum dolorem voluptas, perferendis dolor quibusdam tenetur eius iusto? Error, cumque natus. Corporis natus dolores obcaecati laborum tempore nesciunt nihil iusto repellat explicabo tempora? Provident porro cupiditate, architecto laboriosam cum saepe, quidem placeat, repellendus facere accusantium omnis fugiat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, eligendi maxime. Laudantium repudiandae ratione voluptatem ab, rerum veniam. Ab expedita quos velit ratione exercitationem nulla quod necessitatibus, quaerat tenetur temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolore libero neque, ducimus vero deleniti ratione nam numquam expedita culpa officia error dolor amet sapiente tempore qui quisquam adipisci id.</p>
+        <p><h2>Love Story</h2></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis repellendus reiciendis officiis! Dolor explicabo a repellat? Consequuntur nemo at rerum et nobis esse fugiat a voluptatum. Architecto, itaque nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repudiandae rem eveniet dicta rerum beatae nemo alias quidem possimus modi expedita illo, veniam est commodi, quae ab nesciunt quasi? Consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur ducimus hic, autem excepturi incidunt quos provident soluta voluptatem? At error repudiandae alias labore omnis harum quisquam praesentium similique autem.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint incidunt ipsa minus itaque provident rerum totam saepe nemo dicta, explicabo unde assumenda, deleniti cumque laudantium odio asperiores labore? Nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, impedit. Quae qui magni eius, ut ea rerum dolor doloremque iusto, repellat saepe quod fuga laboriosam. Dolorem recusandae necessitatibus nesciunt eius?</p>
+    </div>
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('#slide').click(function() {
+                $('#txt').slideDown(3000);
+            })
+        });
+    </script>
+</body>
+</html>

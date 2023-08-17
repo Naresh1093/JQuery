@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY EVENTS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        .blk {
+            width: 50%;
+            padding: 30px;
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h3>mouseleave() and mouseover()</h3>
+    <h3>mouseup() and mousedown()</h3>
+    <h3>mouseenter() and mouseout()</h3>
+
+    <div class="blk">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, veritatis facilis recusandae quibusdam incidunt perspiciatis maiores id excepturi minima fuga soluta, quas quasi dignissimos ratione quidem necessitatibus aliquid culpa possimus error ut quaerat temporibus. Ut et deserunt modi aspernatur laudantium eaque rerum consequuntur maxime reprehenderit, placeat quidem? Sed, saepe, consequuntur quos non quibusdam alias quidem cum culpa soluta dolorem ea reprehenderit illum aliquam ipsam laborum nobis sint atque natus, vel quod? Provident praesentium quae ducimus, magni dicta iusto illo quasi quo sunt eveniet animi nobis eum? Temporibus tenetur possimus harum, quidem sint quia, animi non facere officiis autem id unde!</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('.blk').mouseenter(function() {
+                $(this).css('background-color', 'gold');
+            });
+
+            $('.blk').mouseout(function() {
+                $(this).css('background-color', 'slateblue');
+            });
+        });
+    </script>
+</body>
+</html>

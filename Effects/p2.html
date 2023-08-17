@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY EFFECTS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        div {
+            width: 50%;
+            padding: 20px;
+            margin: auto;
+            color: #fff;
+            background-color: slateblue;
+        }
+    </style>
+</head>
+<body>
+    <h3>toggle()</h3>
+    <button id="btn">Toggle</button>
+
+    <div>
+        <h3>Sample Heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus facere rem nihil, earum asperiores ipsa iste ipsum, temporibus ducimus aut qui atque magnam corrupti et. Quas consequuntur quam cumque illum quisquam libero nulla, accusamus adipisci aliquid fugiat assumenda, minima exercitationem sequi animi eaque sed sint enim nisi voluptates dolores veritatis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate autem necessitatibus odio quae asperiores ad suscipit recusandae quidem quasi voluptatibus consectetur quo sit ut vel deleniti veritatis pariatur, repellendus doloribus eveniet, laborum nesciunt optio totam aspernatur laboriosam! Dolores nisi dolore inventore perferendis maxime provident cupiditate, sint possimus voluptas, similique incidunt.</p>
+    </div>
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('#btn').click(function() {
+                $('div').toggle(4000);
+            })
+        });
+    </script>
+</body>
+</html>

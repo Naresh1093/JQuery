@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY EFFECTS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        #slide, #txt {
+            width: 100%;
+            padding: 20px;
+            background-color: crimson;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #slide { text-align: center; }
+    </style>
+</head>
+<body>
+    <h3>slideUp()</h3>
+
+    <div id="slide">Click on me to slide up</div>
+    <div id="txt">
+        <h3>Sample Heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda provident explicabo odio cumque minima voluptas blanditiis voluptatum, neque numquam itaque? Iure inventore commodi, quos maiores in illo dolorem esse! Necessitatibus perferendis voluptate, dolore vel ipsum quos rerum animi labore tempore maiores odio recusandae magnam adipisci ipsam harum nobis tempora optio?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti reprehenderit molestias praesentium eum dolorem voluptas, perferendis dolor quibusdam tenetur eius iusto? Error, cumque natus. Corporis natus dolores obcaecati laborum tempore nesciunt nihil iusto repellat explicabo tempora? Provident porro cupiditate, architecto laboriosam cum saepe, quidem placeat, repellendus facere accusantium omnis fugiat!</p>
+        <p><h2>PET LOVE STORY</h2></p>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minima tempore sunt, dolorem ipsa mollitia iusto quod iste error, facere neque saepe eum explicabo soluta excepturi necessitatibus quasi perspiciatis esse.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odio libero velit omnis est laborum sint adipisci aliquam voluptates pariatur aut doloremque nihil, voluptatibus perspiciatis perferendis cumque. Dolorum, sit amet?</P>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas blanditiis commodi repudiandae perspiciatis id nihil consequuntur, quas nisi deleniti deserunt nulla harum doloremque reprehenderit nobis aspernatur possimus dolorum soluta! Sunt!</p>
+    </div>
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('#slide').click(function() {
+                $('#txt').slideUp(3000);
+            })
+        });
+    </script>
+</body>
+</html>

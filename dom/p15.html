@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY DOM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 4px solid #222;
+            background-color: slateblue;
+            cursor: pointer;
+            margin: 10px;
+            display: inline-flex;
+        }
+    </style>
+</head>
+<body>
+    <!-- It including the padding -->
+    <h3>offset()</h3>
+
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+    <div class="b4"></div>
+
+    <br>
+
+    <h1 id="output"></h1>
+
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('div').click(function () {
+                $c = $(this).offset();
+                $('#output').text(` x = ${ $c.left }px and y = ${ $c.top }px`)
+            });
+        });
+    </script>
+</body>
+</html>

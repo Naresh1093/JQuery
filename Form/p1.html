@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY FORM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h3>serialize</h3>
+    <form id="loginForm">
+        <label for="user">Username</label>
+        <input type="text" name="user" id="user">
+
+        <br><br>
+
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass">
+
+        <br><br>
+        <button type="submit">Login</button>
+
+        <!-- user=admin&pass=admin@123 => query format -->
+
+        <h3 id="out"></h3>
+    </form>
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('#loginForm').submit(function(event) {
+                event.preventDefault();     // To avoid page refresh
+                $data = $(this).serialize();    // query format
+                $('#out').text($data);
+            });
+        });
+    </script>
+</body>
+</html>

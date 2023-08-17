@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY EVENTS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        div#output {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        #output article{
+            width: 250px;
+            border:2px solid #222;
+            padding: 10px;
+            margin: 4px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>load()</h3>
+    <button id="btn">Click Me</button>
+    <div id="output"></div>
+
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('#btn').click(function() {
+                // rest api
+                // ajax => async js and xml
+                $.getJSON('https://jsonplaceholder.typicode.com/posts').done(function (result) {
+                    $('#output').load(result, function(data, status) {
+                        console.log(result);
+                        alert("Data successfully loaded..");
+                        print(result);
+                    });
+                }).catch(err => console.log(err.message));
+            });
+        });
+
+        function print(data) {
+            data.forEach(item => {
+                document.getElementById('output').innerHTML += `<article>
+                            <h4> ${ item.id } ${ item.title } </h4>
+                            <p> ${ item.body } </p>
+                    </article>`
+            })
+        }
+    </script>
+</body>
+</html>

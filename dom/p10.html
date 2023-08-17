@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY DOM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        p {
+            padding: 12px;
+            background-color: deepskyblue;
+            color: #fff;
+            font-weight: bold;
+            width: 50%;
+        }
+
+        .btn {
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3>remove()</h3>
+
+    <p>Sample Para 1 <span class="btn">&times;</span> </p>
+    <p>Sample Para 2 <span class="btn">&times;</span> </p>
+    <p>Sample Para 3 <span class="btn">&times;</span> </p>
+
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('p').click(function() {
+                $(this).remove();
+            });
+        });
+    </script>
+</body>
+</html>

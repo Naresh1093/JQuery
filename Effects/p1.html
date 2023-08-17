@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY EFFECTS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        #myDialog {
+            width: 500px;
+            height: 300px;
+            overflow: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: crimson;
+            padding: 13px;
+            color: #fff;
+        }
+
+        #close {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>hide() and show()</h1>
+
+    <button id="show">Show</button>
+
+    <dialog id="myDialog">
+        <button id="close">&times;</button>
+        <h3>Sample Header</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam similique mollitia soluta amet corporis veniam eligendi nostrum rem aliquam! Animi, eius quas totam labore nulla ipsum incidunt illo excepturi quis, molestiae laudantium deleniti fuga voluptatibus enim doloremque sequi ad dolor. Sapiente, atque! Fugit a, nesciunt numquam perspiciatis aspernatur recusandae libero?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam similique mollitia soluta amet corporis veniam eligendi nostrum rem aliquam! Animi, eius quas totam labore nulla ipsum incidunt illo excepturi quis, molestiae laudantium deleniti fuga voluptatibus enim doloremque sequi ad dolor. Sapiente, atque! Fugit a, nesciunt numquam perspiciatis aspernatur recusandae libero?</p>
+    </dialog>
+
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('#show').click(function() {
+                $('#myDialog').show(4000);
+            });
+
+            $('#close').click(function() {
+                $('#myDialog').hide(3000);
+            });
+        });
+    </script>
+</body>
+</html>

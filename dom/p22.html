@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY DOM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        div {
+            padding: 20px;
+            width: 100%;
+            background-color: crimson;
+            color: #fff;
+            margin: 5px;
+        }
+
+        p { 
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3>wrap()</h3>
+
+    <button>wrap All</button>
+
+    <p>Sample Para 1</p>
+    <p>Sample Para 2</p>
+    <p>Sample Para 3</p>
+    <p>Sample Para 4</p>
+
+    <script>
+        $(document).ready(function() {
+            // Jquery statements
+            $('p').click(function() {
+                $(this).wrap("<div></div>");
+            });
+
+            $('button').click(function() {
+                $('p').wrapAll("<div></div>");
+            })
+        });
+    </script>
+</body>
+</html>
